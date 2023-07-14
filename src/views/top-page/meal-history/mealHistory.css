@@ -1,0 +1,19 @@
+#relative-div {
+    position: relative;
+}
+
+#relative-div img {
+    width: 380px;
+    height: 350px
+}
+
+#label-text {
+    background-color: #FFCC21;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    position: absolute;
+    bottom: 7px
+}

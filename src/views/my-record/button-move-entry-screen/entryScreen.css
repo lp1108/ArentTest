@@ -1,0 +1,40 @@
+.text-center {
+    text-align: -webkit-center
+}
+.border-solid {
+    border: 20px solid #FFCC21
+}
+#card-media {
+    filter: grayscale(1) brightness(60%);
+    height: 350px
+}
+
+#title {
+    margin-bottom: 0;
+    font-size: xx-large;
+    color: #FFCC21;
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+#sub-title {
+    background-color: #FF963C;
+    display: inline-block;
+    margin-top: 0;
+    
+}
+
+.relative-div {
+    position: relative;
+}
+
+#absolute-div {
+    display: "flex";
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}

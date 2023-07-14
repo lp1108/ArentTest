@@ -1,9 +1,10 @@
+import { Box, IconButton } from '@mui/material';
 // project imports
 import btnTransitMorning from '../../../assets/images/btnTransitMorning.svg';
 import btnTransitLunch from '../../../assets/images/btnTransitLunch.svg';
 import btnTransitDinner from '../../../assets/images/btnTransitDinner.svg';
 import btnTransitSnack from '../../../assets/images/btnTransitSnack.svg';
-import { Box, IconButton } from '@mui/material';
+// context
 import { useMealRecord } from '../../../context/meal-record-context';
 const ButtonTransits = () => {
     const { filterMeal } = useMealRecord();

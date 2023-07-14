@@ -12,6 +12,10 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import hamburgerIcon from '../../../assets/icon/hamburgerIcon.svg';
 import { useNavigate } from 'react-router-dom';
+
+// css
+import '../../../css/fontFamily.css';
+import { Typography } from '@mui/material';
 const items = [
     {
         title: "自分の記録",
@@ -62,12 +66,14 @@ export default function SwipeableTemporaryDrawer() {
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
+            
         >
             <List>
                 {items.map((item, index) => (
                     <ListItem key={item.title} disablePadding style={{ padding: "10px", borderBottomStyle: "groove", borderColor: "grey" }}>
-                        <ListItemButton onClick={() => navigate(item.url)}>
-                            <ListItemText primary={item.title} />
+                        <ListItemButton  onClick={() => navigate(item.url)}>
+                            <ListItemText primary={<Typography className="noto-sans-jp" variant="body2" >{item.title}</Typography> }/>
+                            {/* <p>{item.title}</p> */}
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -76,7 +82,7 @@ export default function SwipeableTemporaryDrawer() {
     );
 
     return (
-        <div>
+        <div >
             <React.Fragment key={'right'}>
                 <Button variant="text" onClick={toggleDrawer('right', true)}  style={{marginTop: "10px"}}>
                     <img src={hamburgerIcon} alt="icon" width={"30px"} style={{ marginRight: "8px" }} />

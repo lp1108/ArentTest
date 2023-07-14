@@ -3,7 +3,8 @@
 import { Box } from '@mui/material';
 
 // ==============================|| MAIN NAVBAR / Footer ||============================== //
-
+// css
+import '../../../css/fontFamily.css';
 const Footer = () => {
     return (
         <>
@@ -16,8 +17,9 @@ const Footer = () => {
                     height: "100px",
                     pt: "30px"
                 }}
+                className="noto-sans-jp"
             >
-                <p>会員登録</p>
+                <p >会員登録</p>
                 <div style={{ width: "80px" }}></div>
                 <p>運営会社</p>
                 <div style={{ width: "80px" }}></div>

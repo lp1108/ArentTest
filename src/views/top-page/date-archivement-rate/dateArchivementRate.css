@@ -1,0 +1,20 @@
+#img-date-archivement {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    z-index: 1
+}
+
+#img-date-rate {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px
+}
+
+#relative-div {
+    position: relative;
+}

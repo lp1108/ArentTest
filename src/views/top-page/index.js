@@ -6,29 +6,18 @@ import { MealRecordProvider, useMealRecord } from '../../context/meal-record-con
 // asset
 import MealHistory from './meal-history';
 
+// css
+import '../../css/fontFamily.css'
+import CustomButton from '../../ui-component/CustomButton';
 const TopPage = () => {
-    const {getMoreRecord} = useMealRecord();
+    const { getMoreRecord } = useMealRecord();
 
     return (
         <div>
-
             <BodyFatPercentageGraph />
-                <ButtonTransits />
-                <MealHistory />
-            <Grid container>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4} style={{ textAlign: "center" }}>
-                    <Button variant="outlined" style={{
-                        width: "70%",
-                        height: "50px",
-                        backgroundImage: "linear-gradient(#FF963C, #FFCC21)",
-                        color: "white",
-                        marginTop: "20px",
-                        marginBottom: "60px"
-                    }} onClick={()=> getMoreRecord()}>記録をもっと見る</Button>
-                </Grid>
-                <Grid item xs={4}></Grid>
-            </Grid>
+            <ButtonTransits />
+            <MealHistory />
+            <CustomButton text={'記録をもっと見る'} handleClick={getMoreRecord} />
         </div>
 
     );

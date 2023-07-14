@@ -1,8 +1,10 @@
+import { Box, Card, CardMedia, Grid } from '@mui/material';
 // project imports
 import MainCard from '../../../ui-component/MainCard';
-import { Box, Card, CardMedia, Grid } from '@mui/material';
-import bodyWeightGraph from '../../../assets/images/bodyWeightGraph.svg';
 import DateArchivement from '../date-archivement-rate';
+// asset
+import bodyWeightGraph from '../../../assets/images/bodyWeightGraph.svg';
+
 const BodyFatPercentageGraph = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>

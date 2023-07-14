@@ -7,7 +7,9 @@
 }
 
 .force-overflow {
+	display: flex;
 	min-height: 500px;
+	margin-left: 40px
 }
 
 #customer-scrollbar::-webkit-scrollbar-track {
@@ -27,6 +29,53 @@
 	background-color: #FFCC21;
 }
 
-p {
-	font-family: "Inter";
+#black-div {
+	background-color: #2E2E2E;
+	width: 100%;
+	color: white;
+	padding-right: 25px;
+}
+
+#date {
+	font-size: xx-large
+}
+
+#title {
+	margin-left: 40px !important;
+	margin-right: 45px;
+	font-size: x-large;
+	width: min-content !important;
+	color: white
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-space-between {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #777777
+}
+
+.align-self-end {
+	align-items: self-end;
+}
+
+#kcal {
+	margin-left: 30px;
+	color: #FFCC21
+}
+
+#time {
+	color: #FFCC21
+}
+
+#exercise {
+	margin-bottom: 0
+}
+
+#circle-icon {
+	width: 10px;
+	margin-right: 20px
 }

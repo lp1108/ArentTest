@@ -1,8 +1,9 @@
 import CircleIcon from '@mui/icons-material/Circle';
 import { Grid } from "@mui/material";
 // project imports
-
-import "./myRecord.css"
+// css
+import "./myRecord.css";
+import "../../../css/fontFamily.css";
 const rows = [
     {
         exercise: "家事全般（立位・軽い）",
@@ -34,36 +35,31 @@ const column = [{ index: 0 }, { index: 1 }];
 const MyExerciseRecord = () => {
     return (
         <Grid container mt={8} mb={8}>
-            <div style={{
-                backgroundColor: "#2E2E2E",
-                width: "100%",
-                color: "white",
-                paddingRight: "25px"
-            }}>
+            <div id='black-div'>
                 <Grid item xs={12}>
-                    <div style={{ display: "flex", }}>
-                        <p style={{ marginLeft: "40px", marginRight: "45px", fontSize: "x-large", width: "min-content" }} >MY EXERCISE</p>
-                        <p style={{ fontFamily: "Inter", fontSize: "xx-large" }}>2021.05.21</p>
+                    <div className='flex'>
+                        <p className="inter" id="title" >MY EXERCISE</p>
+                        <p className="inter" id="date">2021.05.21</p>
                     </div>
                 </Grid>
                 <div
                     className='scrollbar'
                     id="customer-scrollbar"
                 >
-                    <div style={{ display: "flex", marginLeft: "40px" }} className="force-overflow">
+                    <div className="force-overflow">
                         {column.map((item) => (
                             <Grid item xs={6} mr={8} pb={8}>
                                 {rows.map((rowData) => (
-                                    <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #777777" }}>
+                                    <div className='flex-space-between'>
                                         <div>
-                                            <div style={{ display: "flex", alignItems: "center" }}>
-                                                <CircleIcon style={{ width: "10px", marginRight: "20px" }} />
-                                                <p style={{ marginBottom: 0 }}>{rowData.exercise}</p>
+                                            <div className='flex align-self-end'>
+                                                <CircleIcon id="circle-icon" />
+                                                <p className="noto-sans-jp" id="exercise">{rowData.exercise}</p>
                                             </div>
-                                            <span style={{ marginLeft: "30px", color: "#FFCC21" }}>{rowData.kcal}</span>
+                                            <span className="inter" id="kcal">{rowData.kcal}</span>
                                         </div>
                                         <div>
-                                            <p style={{ marginLeft: "30px", color: "#FFCC21" }}>{rowData.time}</p>
+                                            <p className="inter" id="time">{rowData.time}</p>
                                         </div>
                                     </div>
                                 ))}

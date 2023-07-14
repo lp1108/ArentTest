@@ -1,7 +1,11 @@
+import { useEffect, useState } from 'react';
 import { Box, Grid } from '@mui/material';
 // asset
 import { useMealRecord } from '../../../context/meal-record-context';
-import { useEffect, useState } from 'react';
+
+// css
+import '../../../css/fontFamily.css';
+import './mealHistory.css'
 const MealHistory = () => {
     const { meal, mealFilter, setMeal } = useMealRecord();
     return (
@@ -15,18 +19,9 @@ const MealHistory = () => {
             <Grid container>
                 {mealFilter?.map((item, index) => (
                     <Grid item xs={3}>
-                        <div style={{ position: "relative" }}>
-                            <img src={item.img} alt={index} width="380px" height="350px" />
-                            <div style={{
-                                backgroundColor: "#FFCC21",
-                                width: "150px",
-                                height: "40px",
-                                color: "white",
-                                textAlign: "center",
-                                paddingTop: "8px",
-                                position: "absolute",
-                                bottom: "7px"
-                            }}>{item.notedLabelText}</div>
+                        <div id="relative-div">
+                            <img src={item.img} alt={index}  />
+                            <div className='inter' id="label-text">{item.notedLabelText}</div>
                         </div>
                     </Grid>
                 ))}
@@ -34,6 +29,5 @@ const MealHistory = () => {
         </Box>
     );
 }
-
 
 export default MealHistory;

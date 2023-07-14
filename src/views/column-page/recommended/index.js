@@ -1,6 +1,8 @@
 import { Divider, Grid } from "@mui/material";
 // project imports
-// asset
+// css
+import './recommended.css';
+import '../../../css/fontFamily.css';
 const recommendedItems = [
     {
         title: "RECOMMENDED",
@@ -28,11 +30,11 @@ const Recommended = () => {
         <Grid container mt={8} mb={8}>
             {recommendedItems.map((item) => (
                 <Grid item xs={3}>
-                    <div style={{ textAlign: "center", backgroundColor: "#2E2E2E", maxWidth: "380px", padding: "50px" }}>
-                        <p style={{ fontSize: "x-large", marginBottom: 0, color: "#FFCC21" }} >{item.title}</p>
-                        <span style={{ fontSize: "x-large", marginBottom: 0, color: "#FFCC21" }}>{item.subTitle}</span>
-                        <Divider variant="middle" style={{ backgroundColor: "white", width: "71px", margin: "8px 0 8px 103px" }} />
-                        <span style={{ color: "white" }}>{item.content}</span>
+                    <div id="recommended-card">
+                        <p className="inter" id="recommended-title" >{item.title}</p>
+                        <span className="inter" id="recommended-sub-title">{item.subTitle}</span>
+                        <Divider variant="middle" id="divider" />
+                        <span classname="noto-sans-jp" id="recommended-content">{item.content}</span>
                     </div>
                 </Grid>
             ))}

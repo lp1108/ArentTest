@@ -1,0 +1,22 @@
+.relative-div {
+    position: relative;
+}
+
+#noted-label-text {
+    background-color: #FFCC21;
+    width: 170px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    position: absolute;
+    bottom: 95px
+}
+
+#article-title {
+    margin-bottom: 0
+}
+
+#article-sub-title {
+    color: #FF963C
+}

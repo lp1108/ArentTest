@@ -1,0 +1,28 @@
+#recommended-card {
+    text-align: center;
+    background-color: #2E2E2E;
+    max-width: 380px;
+    padding: 50px
+}
+
+#recommended-title {
+    font-size: x-large;
+    margin-bottom: 0;
+    color: #FFCC21
+}
+
+#recommended-sub-title {
+    font-size: x-large;
+    margin-bottom: 0;
+    color: #FFCC21 !important
+}
+
+#recommended-content {
+    color: white
+}
+
+#divider {
+    background-color: white;
+    width: 71px;
+    margin: 8px 0 8px 103px
+}
