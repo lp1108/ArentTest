@@ -1,8 +1,7 @@
-import { Box, Button, Grid } from '@mui/material';
 // project imports
 import BodyFatPercentageGraph from './body-fat-percentage-graph';
 import ButtonTransits from './button-transit-input';
-import { MealRecordProvider, useMealRecord } from '../../context/meal-record-context';
+import { useMealRecord } from '../../context/meal-record-context';
 // asset
 import MealHistory from './meal-history';
 

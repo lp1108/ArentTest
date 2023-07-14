@@ -1,4 +1,4 @@
-import { Card, CardMedia } from '@mui/material';
+import { CardMedia } from '@mui/material';
 // project imports
 import d01 from '../../../assets/images/d01.jpg';
 import dateRate from '../../../assets/images/dateRate.svg';

@@ -1,13 +1,10 @@
-import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 // material-ui
-import { useTheme } from '@mui/material/styles';
-import { Box, Button, Grid } from '@mui/material';
+import { Box, Button } from '@mui/material';
 // asset
 import myProfileIcon from '../../../assets/icon/myProfileIcon.svg';
 import challengeIcon from '../../../assets/icon/challengeIcon.svg';
 import noteIcon from '../../../assets/icon/noteIcon.svg';
-import hamburgerIcon from '../../../assets/icon/hamburgerIcon.svg';
 // project imports
 import SideBar from '../sidebar';
 import LogoSection from '../logo-section';
@@ -18,7 +15,6 @@ import './header.css';
 // ==============================|| MAIN NAVBAR / HEADER ||============================== //
 const Header = () => {
     const navigate = useNavigate();
-    const theme = useTheme();
     return (
         <>
             <Box

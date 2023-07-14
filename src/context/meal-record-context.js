@@ -78,10 +78,10 @@ export const MealRecordProvider = ({ children }) => {
     const [mealFilter, setMealFilter] = useState(mealData);
 
     const filterMeal = (mealTime) => {
-        if (!mealTime || mealTime == "") {
+        if (!mealTime || mealTime === "") {
             return;
         }
-        const result = meal.filter((m) => m.mealTime == mealTime);
+        const result = meal.filter((m) => m.mealTime === mealTime);
         console.log(result);
         setMealFilter(result);
         setMealTime(mealTime);
@@ -89,12 +89,12 @@ export const MealRecordProvider = ({ children }) => {
 
     const getMoreRecord = () => {
         let result = [...meal];
-        if (!mealTime || mealTime == "") {
+        if (!mealTime || mealTime === "") {
             result = meal.concat(mealDataAdded);
             setMeal(result);
             setMealFilter(result);
         } else {
-            const mealFilted = mealDataAdded.filter((meal) => meal.mealTime == mealTime)[0];
+            const mealFilted = mealDataAdded.filter((meal) => meal.mealTime === mealTime)[0];
             result = [...result, mealFilted]
             setMeal(result);
 
@@ -103,6 +103,7 @@ export const MealRecordProvider = ({ children }) => {
 
     useEffect(() => {
         filterMeal(mealTime);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [meal])
 
     const value = { meal, mealFilter, filterMeal, setMeal, getMoreRecord }

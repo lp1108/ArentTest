@@ -1,4 +1,4 @@
-import { useState, useContext, createContext, useEffect } from "react";
+import { useState, useContext, createContext } from "react";
 // asset
 import column1 from "../assets/images/column-1.jpg";
 import column2 from "../assets/images/column-2.jpg";

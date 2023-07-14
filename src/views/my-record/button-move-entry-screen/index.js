@@ -1,4 +1,4 @@
-import { Box, Card, CardMedia, Grid } from "@mui/material";
+import { Card, CardMedia, Grid } from "@mui/material";
 // asset
 import MyRecommend1 from "../../../assets/images/MyRecommend-1.jpg";
 import MyRecommend2 from "../../../assets/images/MyRecommend-2.jpg";

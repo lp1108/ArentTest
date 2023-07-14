@@ -1,4 +1,4 @@
-import { useState, useContext, createContext, useEffect } from "react";
+import { useState, useContext, createContext } from "react";
 // asset
 const DiaryRecordContext = createContext();
 const diaryData = [

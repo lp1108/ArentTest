@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react';
 import { Box, Grid } from '@mui/material';
 // asset
 import { useMealRecord } from '../../../context/meal-record-context';
-
 // css
 import '../../../css/fontFamily.css';
 import './mealHistory.css'
 const MealHistory = () => {
-    const { meal, mealFilter, setMeal } = useMealRecord();
+    const { mealFilter } = useMealRecord();
     return (
         <Box
             mx={20}

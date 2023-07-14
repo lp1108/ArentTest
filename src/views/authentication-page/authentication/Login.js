@@ -1,8 +1,5 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
 // material-ui
-import { Divider, Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 // project imports
 import AuthWrapper from '../AuthWrapper';
 import AuthCardWrapper from '../AuthCardWrapper';
